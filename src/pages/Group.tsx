@@ -1,4 +1,4 @@
-
+import React from 'react';
 
 const Group = () => {
   const currentMembers = [
@@ -31,36 +31,16 @@ const Group = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Principal Investigator */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center space-x-4 mb-8">
-            <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-              <svg width="24" height="24" viewBox="0 0 100 100" fill="none" stroke="white" strokeWidth="3">
-                <circle cx="35" cy="30" r="12" />
-                <circle cx="65" cy="30" r="12" />
-                <path d="M20,80 Q35,60 50,80 Q65,60 80,80" />
-              </svg>
-            </div>
+          <div className="inline-flex items-center space-x-3 mb-8">
+            <span className="text-5xl">👥</span>
             <h1 className="text-4xl font-bold text-gray-900">Group</h1>
-            <div className="w-12 h-12 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg flex items-center justify-center">
-              <svg width="24" height="24" viewBox="0 0 100 100" fill="none" stroke="white" strokeWidth="3">
-                <rect x="30" y="20" width="40" height="50" rx="5" />
-                <path d="M40,35 L60,35" />
-                <path d="M40,45 L60,45" />
-                <path d="M40,55 L60,55" />
-                <path d="M50,70 L50,85" />
-                <path d="M45,80 L55,80" />
-              </svg>
-            </div>
+            <span className="text-5xl">🎓</span>
           </div>
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg p-8 mb-12 relative overflow-hidden">
             <div className="absolute top-4 right-4 text-4xl opacity-20">🔬</div>
             <div className="flex items-center justify-center mb-4">
               <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mr-4">
-                <svg width="40" height="40" viewBox="0 0 100 100" fill="none" stroke="white" strokeWidth="2">
-                  <circle cx="50" cy="35" r="15" />
-                  <path d="M25,80 Q50,60 75,80" />
-                  <path d="M35,45 L35,55 L45,55" />
-                  <path d="M65,45 L65,55 L55,55" />
-                </svg>
+                <span className="text-3xl">👨‍🔬</span>
               </div>
               <div>
                 <h2 className="text-3xl font-bold mb-2">Raghavan B. Sunoj</h2>
@@ -75,15 +55,10 @@ const Group = () => {
         {/* Current Members */}
         <section className="mb-16">
           <div className="text-center mb-8">
-            <div className="inline-flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
-                <svg width="20" height="20" viewBox="0 0 100 100" fill="none" stroke="white" strokeWidth="4">
-                  <circle cx="35" cy="30" r="10" />
-                  <circle cx="65" cy="30" r="10" />
-                  <path d="M20,75 Q35,55 50,75 Q65,55 80,75" />
-                </svg>
-              </div>
+            <div className="inline-flex items-center space-x-2">
+              <span className="text-3xl">👩‍🔬</span>
               <h2 className="text-3xl font-bold text-gray-900">Current Members</h2>
+              <span className="text-3xl">👨‍🔬</span>
             </div>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

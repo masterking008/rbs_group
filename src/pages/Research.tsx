@@ -1,24 +1,14 @@
-
+import React from 'react';
 
 const Research = () => {
   return (
     <div className="min-h-screen py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center space-x-4 mb-4">
-            <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-              <svg width="24" height="24" viewBox="0 0 100 100" fill="none" stroke="white" strokeWidth="3">
-                <polygon points="50,15 85,35 85,65 50,85 15,65 15,35" />
-                <circle cx="50" cy="50" r="15" />
-              </svg>
-            </div>
+          <div className="inline-flex items-center space-x-3 mb-4">
+            <span className="text-5xl">🧪</span>
             <h1 className="text-4xl font-bold text-gray-900">Research</h1>
-            <div className="w-12 h-12 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg flex items-center justify-center">
-              <svg width="24" height="24" viewBox="0 0 100 100" fill="none" stroke="white" strokeWidth="3">
-                <path d="M30,70 L30,30 Q30,20 40,20 L60,20 Q70,20 70,30 L70,50" />
-                <circle cx="70" cy="60" r="15" />
-              </svg>
-            </div>
+            <span className="text-5xl">⚗️</span>
           </div>
           <p className="text-xl text-gray-600">Exploring the frontiers of computational chemistry and catalysis</p>
         </div>
@@ -28,13 +18,7 @@ const Research = () => {
           <div className="bg-white rounded-lg shadow-lg p-8 relative overflow-hidden">
             <div className="absolute -top-4 -right-4 text-6xl opacity-10">⚛️</div>
             <div className="flex items-center mb-6">
-              <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
-                <svg width="20" height="20" viewBox="0 0 100 100" fill="none" stroke="#1e40af" strokeWidth="4">
-                  <path d="M20,50 Q50,20 80,50 Q50,80 20,50" />
-                  <circle cx="35" cy="40" r="4" fill="#1e40af" />
-                  <circle cx="65" cy="60" r="4" fill="#1e40af" />
-                </svg>
-              </div>
+              <span className="text-3xl mr-3">🧬</span>
               <h2 className="text-2xl font-bold text-blue-800">Asymmetric Multi-catalytic Reactions</h2>
             </div>
             <ul className="space-y-3 text-gray-700">
@@ -52,15 +36,7 @@ const Research = () => {
           <div className="bg-white rounded-lg shadow-lg p-8 relative overflow-hidden">
             <div className="absolute -top-4 -right-4 text-6xl opacity-10">🔗</div>
             <div className="flex items-center mb-6">
-              <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mr-3">
-                <svg width="20" height="20" viewBox="0 0 100 100" fill="none" stroke="#6b21a8" strokeWidth="4">
-                  <path d="M30,30 L70,30" />
-                  <path d="M50,30 L50,70" />
-                  <circle cx="30" cy="30" r="6" />
-                  <circle cx="70" cy="30" r="6" />
-                  <circle cx="50" cy="70" r="6" />
-                </svg>
-              </div>
+              <span className="text-3xl mr-3">⚙️</span>
               <h2 className="text-2xl font-bold text-purple-800">Mechanistic Studies on C-H Bond Activation</h2>
             </div>
             <ul className="space-y-3 text-gray-700">
@@ -78,18 +54,7 @@ const Research = () => {
           <div className="bg-white rounded-lg shadow-lg p-8 lg:col-span-2 relative overflow-hidden">
             <div className="absolute -top-4 -right-4 text-6xl opacity-10">🤖</div>
             <div className="flex items-center mb-6">
-              <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center mr-3">
-                <svg width="20" height="20" viewBox="0 0 100 100" fill="none" stroke="#166534" strokeWidth="4">
-                  <circle cx="30" cy="30" r="6" />
-                  <circle cx="70" cy="30" r="6" />
-                  <circle cx="30" cy="70" r="6" />
-                  <circle cx="70" cy="70" r="6" />
-                  <path d="M36,30 L64,30" />
-                  <path d="M30,36 L30,64" />
-                  <path d="M70,36 L70,64" />
-                  <path d="M36,70 L64,70" />
-                </svg>
-              </div>
+              <span className="text-3xl mr-3">📊</span>
               <h2 className="text-2xl font-bold text-green-800">Machine Learning in Catalysis</h2>
             </div>
             <div className="grid md:grid-cols-2 gap-6">

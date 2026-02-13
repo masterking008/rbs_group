@@ -1,4 +1,4 @@
-
+import React from 'react';
 
 const Resources = () => {
   const hardware = [
@@ -44,28 +44,10 @@ const Resources = () => {
     <div className="min-h-screen py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center space-x-4 mb-4">
-            <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-              <svg width="24" height="24" viewBox="0 0 100 100" fill="none" stroke="white" strokeWidth="3">
-                <rect x="20" y="30" width="60" height="40" rx="5" />
-                <rect x="25" y="20" width="50" height="5" rx="2" />
-                <path d="M35,40 L65,40" />
-                <path d="M35,50 L65,50" />
-                <path d="M35,60 L55,60" />
-              </svg>
-            </div>
+          <div className="inline-flex items-center space-x-3 mb-4">
+            <span className="text-5xl">💻</span>
             <h1 className="text-4xl font-bold text-gray-900">Resources</h1>
-            <div className="w-12 h-12 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg flex items-center justify-center">
-              <svg width="24" height="24" viewBox="0 0 100 100" fill="none" stroke="white" strokeWidth="3">
-                <circle cx="50" cy="50" r="25" />
-                <circle cx="50" cy="50" r="15" />
-                <circle cx="50" cy="50" r="5" />
-                <path d="M50,25 L50,15" />
-                <path d="M50,75 L50,85" />
-                <path d="M25,50 L15,50" />
-                <path d="M75,50 L85,50" />
-              </svg>
-            </div>
+            <span className="text-5xl">⚙️</span>
           </div>
           <p className="text-xl text-gray-600">Computational infrastructure and software tools</p>
         </div>
@@ -76,16 +58,7 @@ const Resources = () => {
           <div className="grid md:grid-cols-2 gap-8">
             {hardware.map((item, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg p-8 card-hover relative overflow-hidden">
-                <div className="absolute -top-2 -right-2 opacity-5">
-                  <svg width="40" height="40" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2">
-                    <circle cx="50" cy="50" r="20" />
-                    <circle cx="50" cy="50" r="10" />
-                    <path d="M50,30 L50,20" />
-                    <path d="M50,70 L50,80" />
-                    <path d="M30,50 L20,50" />
-                    <path d="M70,50 L80,50" />
-                  </svg>
-                </div>
+                <div className="absolute -top-2 -right-2 text-4xl opacity-10">⚙️</div>
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
                     <span className="text-2xl">🖥️</span>
@@ -117,15 +90,7 @@ const Resources = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {software.map((item, index) => (
               <div key={index} className="bg-gradient-to-br from-purple-50 to-pink-100 rounded-lg shadow-lg p-6 card-hover relative overflow-hidden">
-                <div className="absolute -top-1 -right-1 opacity-5">
-                  <svg width="30" height="30" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M20,80 L40,60 L60,70 L80,40" />
-                    <circle cx="20" cy="80" r="3" />
-                    <circle cx="40" cy="60" r="3" />
-                    <circle cx="60" cy="70" r="3" />
-                    <circle cx="80" cy="40" r="3" />
-                  </svg>
-                </div>
+                <div className="absolute -top-1 -right-1 text-3xl opacity-10">📊</div>
                 <div className="flex items-center mb-4">
                   <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mr-3">
                     <span className="text-lg">⚙️</span>

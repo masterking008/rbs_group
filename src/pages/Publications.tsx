@@ -1,4 +1,4 @@
-
+import React from 'react';
 
 const Publications = () => {
   const recentPublications = [
@@ -48,25 +48,10 @@ const Publications = () => {
     <div className="min-h-screen py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center space-x-4 mb-4">
-            <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-              <svg width="24" height="24" viewBox="0 0 100 100" fill="none" stroke="white" strokeWidth="3">
-                <rect x="25" y="20" width="50" height="60" rx="5" />
-                <path d="M35,35 L65,35" />
-                <path d="M35,45 L65,45" />
-                <path d="M35,55 L55,55" />
-              </svg>
-            </div>
+          <div className="inline-flex items-center space-x-3 mb-4">
+            <span className="text-5xl">📚</span>
             <h1 className="text-4xl font-bold text-gray-900">Publications</h1>
-            <div className="w-12 h-12 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg flex items-center justify-center">
-              <svg width="24" height="24" viewBox="0 0 100 100" fill="none" stroke="white" strokeWidth="3">
-                <path d="M30,20 L70,20 L80,30 L80,80 L20,80 L20,30 Z" />
-                <path d="M70,20 L70,30 L80,30" />
-                <path d="M30,40 L60,40" />
-                <path d="M30,50 L60,50" />
-                <path d="M30,60 L50,60" />
-              </svg>
-            </div>
+            <span className="text-5xl">📄</span>
           </div>
           <p className="text-xl text-gray-600">Selected publications from a total of 181 publications</p>
           <div className="mt-4">
@@ -90,12 +75,7 @@ const Publications = () => {
           <div className="space-y-6">
             {recentPublications.map((pub, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg p-6 card-hover relative overflow-hidden">
-                <div className="absolute -top-2 -right-2 opacity-5">
-                  <svg width="40" height="40" viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2">
-                    <polygon points="50,15 85,35 85,65 50,85 15,65 15,35" />
-                    <circle cx="50" cy="50" r="15" />
-                  </svg>
-                </div>
+                <div className="absolute top-2 right-2 text-2xl opacity-10">🧪</div>
                 <div className="mb-3">
                   <span className="text-sm font-medium text-blue-600 bg-blue-50 px-2 py-1 rounded">
                     {index + 1}
